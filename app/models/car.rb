@@ -18,7 +18,7 @@ class Car
   end
 
   def accelerate
-    unless parking_brake == 'on'
+    unless parking_brake == 'On'
       @speed += 10
     end
   end
