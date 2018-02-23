@@ -1,0 +1,27 @@
+<h1> heres a car simulator</h1>
+
+<h2>Car Make: <%= @car.make %></h2>
+<h2>Car Year: <%= @car.model_year %></h2>
+<h2>Current Speed: <%= @car.speed %> km/h</h2>
+<p>
+  <form action="/cars_accelerate" method="get">
+    <input type="submit" value="Accelerate">
+  </form>
+
+  <form action="/cars_brake" method="get">
+    <input type="submit" value="brake">
+  </form>
+</p>
+<h2>Lights are <%= @car.lights%></h2>
+<p>
+  <%= button_to "Light Switch", href="/cars/lights", :method => "get" %>
+</p>
+
+<p>
+  <b>Parking Brake is: <%= @car.parking_brake%></b><br />
+  <form action="/cars/parking" method="get">
+    <input type="radio" name="contact" value="On"> On<br />
+    <input type="radio" name="contact" value="Off"> Off<br />
+    <input type="submit" value="Submit" />
+  </form>
+</p>

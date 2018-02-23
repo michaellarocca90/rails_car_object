@@ -1,0 +1,11 @@
+<h1>Welcome to the Car Simulator</h1>
+
+<form action="/car_register" method="get">
+  Make: <input type="text" name="make"><br>
+  Model Year: <input type="text" name="model_year"><br>
+  <input type="submit" value="Simulate Car">
+</form>
+<p>
+  <%= @make %>
+  <%= @model_year %>
+</p>

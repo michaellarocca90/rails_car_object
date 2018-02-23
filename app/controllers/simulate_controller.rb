@@ -1,0 +1,6 @@
+class SimulateController < ApplicationController
+
+
+
+
+end
